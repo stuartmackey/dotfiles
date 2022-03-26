@@ -8,3 +8,5 @@ brew install nvim
 brew install fzf
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+brew install zoom
