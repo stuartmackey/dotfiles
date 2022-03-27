@@ -11,3 +11,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 brew install zoom
 brew install tableplus
+brew install stow
+
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+brew install --cask font-victor-mono-nerd-font
