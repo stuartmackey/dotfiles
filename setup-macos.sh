@@ -16,3 +16,6 @@ brew install stow
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 brew install --cask font-victor-mono-nerd-font
+
+brew install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
