@@ -19,3 +19,5 @@ brew install --cask font-victor-mono-nerd-font
 
 brew install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+brew install virtualbox
