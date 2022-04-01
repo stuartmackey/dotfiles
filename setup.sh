@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm ttf-liberation ttf-droid ttf-roboto terminus-font
 
 sudo pacman -S --noconfirm rxvt-unicode ranger rofi dmenu --needed
 
-sudo pacman -S --noconfirm neovim
+sudo pacman -S --noconfirm neovim tmux virtualbox
 
 cd
 git clone https://aur.archlinux.org/yay.git
@@ -22,3 +22,7 @@ makepkg -si
 yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
+
+yay -S asdf nerd-fonts-hack nerd-fonts-victor-mono
+
+#yay -S brave 
