@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm ttf-liberation ttf-droid ttf-roboto terminus-font
 
 sudo pacman -S --noconfirm rxvt-unicode ranger rofi dmenu --needed
 
-sudo pacman -S --noconfirm neovim tmux virtualbox
+sudo pacman -S --noconfirm neovim tmux virtualbox openssh
 
 cd
 git clone https://aur.archlinux.org/yay.git
