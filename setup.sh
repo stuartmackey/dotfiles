@@ -1,10 +1,22 @@
 sudo pacman -Syy
 sudo pacman -S --needed base-devel
 
-NONINTERACTIVE=1 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+sudo pacman -S xf86-video-fbdev xorg xorg-xinit nitrogen picom
+sudo pacman -S stow fzf kitty
 
-#NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo pacman -S xorg-server xorg-apps
+sudo pacman -S i3-gaps i3blocks i3lock numlockx
 
+sudo pacman -S noto-fonts ttf-ubuntu-font-family ttf-dejavu ttf-freefont
+sudo pacman -S ttf-liberation ttf-droid ttf-roboto terminus-font
 
-#brew install stow
-#brew install fzf
+sudo pacman -S rxvt-unicode ranger rofi dmenu --needed
+
+cd
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+yay -Y --gendb
+yay -Syu --devel
+yay -Y --devel --save
