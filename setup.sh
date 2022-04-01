@@ -12,6 +12,8 @@ sudo pacman -S --noconfirm ttf-liberation ttf-droid ttf-roboto terminus-font
 
 sudo pacman -S --noconfirm rxvt-unicode ranger rofi dmenu --needed
 
+sudo pacman -S --noconfirm neovim
+
 cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
