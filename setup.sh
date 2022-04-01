@@ -23,6 +23,6 @@ yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
 
-yay -S asdf nerd-fonts-hack nerd-fonts-victor-mono
+yay -S asdf nerd-fonts-hack nerd-fonts-victor-mono github-cli
 
 #yay -S brave 
