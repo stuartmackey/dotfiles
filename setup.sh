@@ -26,3 +26,5 @@ yay -Y --devel --save
 yay -S asdf nerd-fonts-hack nerd-fonts-victor-mono github-cli
 
 #yay -S brave 
+
+sudo pacman -S --noconfirm unzip
