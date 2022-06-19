@@ -6,6 +6,8 @@ brew install gh
 brew install asdf 
 brew install nvim
 brew install fzf
+brew install alfred
+brew install 1password
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
