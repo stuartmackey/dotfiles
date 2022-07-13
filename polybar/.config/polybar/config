@@ -71,7 +71,7 @@ modules-left = i3 pulseaudio cpu temperature
 modules-right = wlan backlight-acpi date ;powermenu
 modules-center = cmus spotify-next spotify
 
-tray-position = right
+;tray-position = right
 ;tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
