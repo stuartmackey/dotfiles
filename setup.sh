@@ -20,7 +20,7 @@ yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
 
-yay -S asdf nerd-fonts-hack nerd-fonts-victor-mono github-cli
+yay -S asdf-vm nerd-fonts-hack nerd-fonts-victor-mono github-cli
 
 #yay -S brave 
 
@@ -33,4 +33,8 @@ sudo pacman -S --noconfirm zsh
 yay -S diodon
 sudo pacman -S cryptsetup
 sudo pacman -S flameshot xclip
+
+sudo pacman -S docker docker-compose
+
+sudo pacman -S ranger
 

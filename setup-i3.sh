@@ -10,3 +10,6 @@ yay -S polybar
 yay -S nerd-fonts-jetbrains-mono ttf-font-awesome ttf-unifont nerd-fonts-hack nerd-fonts-victor-mono github-cli
 
 sudo pacman -S --noconfirm playerctl pavucontrol
+
+sudo pacman -S papirus-icon-theme nordic-theme
+sudo pacman -S lxappearance qt5ct
