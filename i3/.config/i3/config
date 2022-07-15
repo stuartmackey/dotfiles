@@ -139,6 +139,6 @@ exec flameshot
 default_border pixel 1
 default_floating_border pixel 1
 
-gaps inner 2
+gaps inner 5
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

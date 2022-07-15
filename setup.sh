@@ -38,3 +38,8 @@ sudo pacman -S docker docker-compose
 
 sudo pacman -S ranger
 
+yay chromedriver
+
+sudo pacman -S keychain
+
+sudo pacman -S ripgrep

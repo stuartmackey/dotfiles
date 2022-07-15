@@ -13,3 +13,4 @@ sudo pacman -S --noconfirm playerctl pavucontrol
 
 sudo pacman -S papirus-icon-theme nordic-theme
 sudo pacman -S lxappearance qt5ct
+sudo pacman -S lxsession polkit
