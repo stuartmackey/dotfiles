@@ -1,12 +1,8 @@
 sudo pacman -Syy
 sudo pacman -S --noconfirm --needed base-devel
 
-sudo pacman -S --noconfirm xf86-video-fbdev xorg xorg-xinit nitrogen picom
-sudo pacman -S --noconfirm stow fzf kitty
-
-sudo pacman -S --noconfirm xorg-server xorg-apps
-sudo pacman -S --noconfirm numlockx
-
+sudo pacman -S --noconfirm xf86-video-fbdev xorg xorg-xinit nitrogen picom stow fzf kitty
+sudo pacman -S --noconfirm xorg-server xorg-apps numlockx
 sudo pacman -S --noconfirm neovim tmux virtualbox openssh
 
 cd
@@ -24,22 +20,20 @@ yay -S asdf-vm nerd-fonts-hack nerd-fonts-victor-mono github-cli
 
 #yay -S brave 
 
-sudo pacman -S --noconfirm unzip
-
-# after install
-sudo pacman -S --noconfirm zsh
+sudo pacman -S --noconfirm unzip zsh
 
  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 yay -S diodon
-sudo pacman -S cryptsetup
-sudo pacman -S flameshot xclip
+sudo pacman -S cryptsetup flameshot xclip
 
+# Local development
 sudo pacman -S docker docker-compose
-
-sudo pacman -S ranger
-
 yay chromedriver
 
-sudo pacman -S keychain
+# File browser
+sudo pacman -S ranger keychain ripgrep libreoffice-still
 
-sudo pacman -S ripgrep
+# Access to AWS
+sudo pacman -S aws-cli-v2-bin 
+
+yay -S aws-session-manager-plugin
