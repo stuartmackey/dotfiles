@@ -37,3 +37,5 @@ sudo pacman -S ranger keychain ripgrep libreoffice-still
 sudo pacman -S aws-cli-v2-bin 
 
 yay -S aws-session-manager-plugin
+
+sudo pacman -S jq sqlitebrowser
