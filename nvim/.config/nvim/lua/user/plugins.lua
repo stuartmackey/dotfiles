@@ -89,7 +89,9 @@ return packer.startup(function(use)
   -- nvim tree
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
-  --
+
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}  --
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

@@ -38,4 +38,8 @@ sudo pacman -S aws-cli-v2-bin
 
 yay -S aws-session-manager-plugin
 
-sudo pacman -S jq sqlitebrowser
+sudo pacman -S jq sqlitebrowser gimp
+
+sudo pacman -S udisks2
+
+sudo pacman -S inotify-tools
