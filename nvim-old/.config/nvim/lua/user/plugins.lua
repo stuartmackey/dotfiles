@@ -72,12 +72,20 @@ return packer.startup(function(use)
   use 'nvim-telescope/telescope-media-files.nvim'
 
   -- Treesitter
-  use {
+  --[[ use { ]]
+  --[[   "nvim-treesitter/nvim-treesitter", ]]
+  --[[   run = ":TSUpdate", ]]
+  --[[ } ]]
+  --[[ use "p00f/nvim-ts-rainbow" ]]
+  --[[ use "nvim-treesitter/playground" ]]
+
+  -- treesitter configuration
+  use({
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
-  use "p00f/nvim-ts-rainbow"
-  use "nvim-treesitter/playground"
+    run = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
+    end,
+  })
 
   -- Autopairs
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
