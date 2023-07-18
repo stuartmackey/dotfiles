@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 source ~/Working/GoReport/docker-compose-files/alias.sh
+source ~/Working/GoReport/docker-compose-files/credentials.env
 
 source $HOME/Working/GoReport/infrastructure/scripts/aws_commands.zsh
 

@@ -43,3 +43,5 @@ sudo pacman -S jq sqlitebrowser gimp
 sudo pacman -S udisks2
 
 sudo pacman -S inotify-tools
+
+yay -S redisinsight

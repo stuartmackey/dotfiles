@@ -132,7 +132,7 @@ bindsym $mod+Shift+p exec systemctl suspend
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 # default workspaces
-assign [class="Microsoft Teams - Preview"] $ws1
+assign [class="Microsoft Teams"] $ws1
 
 exec --no-startup-id diodon
 exec setxkbmap gb

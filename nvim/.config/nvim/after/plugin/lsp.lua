@@ -4,8 +4,7 @@ lsp.preset('recommended')
 
 lsp.ensure_installed({
 	'tsserver',
-	'eslint',
-	'sumneko_lua',
+	-- 'eslint',
 	'elixirls'
 })
 
@@ -37,36 +36,14 @@ lsp.set_preferences({
     }
 })
 
-require'lspconfig'.sumneko_lua.setup {
-  settings = {
-    Lua = {
-      runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
-      },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
-}
-
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
+  print(client.name)
 
-  if client.name == "eslint" then
-      vim.cmd.LspStop('eslint')
-      return
-  end
+  -- if client.name == "eslint" then
+  --     vim.cmd.LspStop('eslint')
+  --     return
+  -- end
 
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
