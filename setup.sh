@@ -27,7 +27,7 @@ yay -S diodon
 sudo pacman -S cryptsetup flameshot xclip
 
 # Local development
-sudo pacman -S docker docker-compose
+sudo pacman -S docker docker-compose docker-buildx
 yay chromedriver
 
 # File browser
@@ -45,3 +45,5 @@ sudo pacman -S udisks2
 sudo pacman -S inotify-tools
 
 yay -S redisinsight
+
+yay -S atool

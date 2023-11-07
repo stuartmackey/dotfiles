@@ -18,6 +18,7 @@ wk.register({
     h = { "Help Tags" },
     r = { "Replace in File" },
     s = { "Shout out" },
+    j = { ":%!jq .<CR>", "Format JSON" },
   },
   h = {
     name = "harpoon",
@@ -38,6 +39,6 @@ wk.register({
     h = { ":Lspsaga hover<CR>", "Hover Documenation" },
     ["ci"] = { ":Lspsaga incoming_calls<CR>", "Incoming Calls" },
     ["co"] = { ":Lspsaga outgoing_calls<CR>", "Outgoing Calls" },
-    f = { ":Lspsaga finder<CR>", "Finder" },
+    f = { ":Lspsaga finder<CR>", "Finder Calls" },
   }
 }, { prefix = "<leader>" })

@@ -115,7 +115,7 @@ source $HOME/.keychain/stuart-pc-sh
 # export SSH_AUTH_SOCK=~/.1password/agent.sock
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
-
+export RANGER_LOAD_DEFAULT_RC=false
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)

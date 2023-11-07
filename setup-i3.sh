@@ -15,4 +15,4 @@ sudo pacman -S papirus-icon-theme nordic-theme
 sudo pacman -S lxappearance qt5ct
 sudo pacman -S lxsession polkit
 
-yay -S lazydocker fx git-trim
+yay -S lazydocker fx git-trim bruno
