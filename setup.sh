@@ -18,11 +18,11 @@ yay -Y --devel --save
 
 yay -S asdf-vm nerd-fonts-hack nerd-fonts-victor-mono github-cli
 
-#yay -S brave 
+#yay -S brave
 
 sudo pacman -S --noconfirm unzip zsh
 
- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 yay -S diodon
 sudo pacman -S cryptsetup flameshot xclip
 
@@ -33,13 +33,12 @@ yay chromedriver
 # File browser
 sudo pacman -S ranger keychain ripgrep libreoffice-still
 
-# Access to AWS
-sudo pacman -S aws-cli-v2-bin 
-
-yay -S aws-session-manager-plugin
-
 sudo pacman -S jq sqlitebrowser gimp
 
 sudo pacman -S udisks2
 
 sudo pacman -S inotify-tools
+
+yay -S lazydocker lazygit redisinsight atool btop fx git-trim bruno
+
+yay -S aws-cli-v2 aws-session-manager-plugin fd

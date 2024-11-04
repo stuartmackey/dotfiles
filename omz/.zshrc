@@ -107,7 +107,7 @@ source ~/Working/GoReport/docker-compose-files/alias.sh
 source $HOME/Working/GoReport/infrastructure/scripts/aws_commands.zsh
 
 /usr/bin/keychain --quiet $HOME/.ssh/id_ed25519
-source $HOME/.keychain/stuart-pc-sh
+source $HOME/.keychain/archlinux-sh
 
 . /opt/asdf-vm/asdf.sh
 
