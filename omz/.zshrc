@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git tmux asdf aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,14 +103,18 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 source ~/Working/GoReport/docker-compose-files/alias.sh
+source ~/Working/GoReport/docker-compose-files/credentials.env
 
 source $HOME/Working/GoReport/infrastructure/scripts/aws_commands.zsh
 
-/usr/bin/keychain --quiet $HOME/.ssh/id_ed25519
-source $HOME/.keychain/archlinux-sh
+#/usr/bin/keychain --quiet $HOME/.ssh/id_ed25519
+#source $HOME/.keychain/archlinux-sh
 
-. /opt/asdf-vm/asdf.sh
+#. /opt/asdf-vm/asdf.sh
 
 # export SSH_AUTH_SOCK=~/.1password/agent.sock
+#export QT_QPA_PLATFORMTHEME="qt5ct"
 
-export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

@@ -41,4 +41,4 @@ sudo pacman -S inotify-tools
 
 yay -S lazydocker lazygit redisinsight atool btop fx git-trim bruno
 
-yay -S aws-cli-v2 aws-session-manager-plugin fd
+yay -S aws-cli-v2 aws-session-manager-plugin
