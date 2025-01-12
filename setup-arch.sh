@@ -2,10 +2,10 @@
 
 echo "---- Set up Paru"
 
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
+#sudo pacman -S --needed base-devel
+#git clone https://aur.archlinux.org/paru.git
+#cd paru
+#makepkg -si
 
 echo "Kitty, Neovim, gh, stow, tmux, fzf, ripgrep, ripgrep, btop, Chrome, lazygit  ---------------------------------------------------------------------------"
 paru -y kitty neovim gh stow tmux fzf btop ripgrep google-chrome-stable lazygit
