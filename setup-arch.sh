@@ -8,8 +8,8 @@ echo "******** SKIPPING"
 #cd paru
 #makepkg -si
 
-echo "Kitty, Neovim, gh, stow, tmux, fzf, ripgrep, ripgrep, btop, Chrome, lazygit  ---------------------------------------------------------------------------"
-paru -y kitty neovim gh stow tmux fzf btop ripgrep google-chrome-stable lazygit
+echo "Kitty, Neovim, gh, stow, tmux, fzf, ripgrep, ripgrep, btop, Chrome, lazygit, unzip  ---------------------------------------------------------------------------"
+paru -yS kitty neovim github-cli stow tmux fzf btop ripgrep google-chrome lazygit unzip
 sudo update-alternatives --config x-terminal-emulator
 
 echo "Nerd Fonts --------------------------------------------------------------"
