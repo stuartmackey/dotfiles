@@ -102,19 +102,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
-source ~/Working/GoReport/docker-compose-files/alias.sh
-source ~/Working/GoReport/docker-compose-files/credentials.env
 
-source $HOME/Working/GoReport/infrastructure/scripts/aws_commands.zsh
+#source ~/Working/GoReport/docker-compose-files/alias.sh
+#source ~/Working/GoReport/docker-compose-files/credentials.env
+
+#source $HOME/Working/GoReport/infrastructure/scripts/aws_commands.zsh
 
 #/usr/bin/keychain --quiet $HOME/.ssh/id_ed25519
 #source $HOME/.keychain/archlinux-sh
 
-#. /opt/asdf-vm/asdf.sh
-
-# export SSH_AUTH_SOCK=~/.1password/agent.sock
-#export QT_QPA_PLATFORMTHEME="qt5ct"
-
+. /opt/asdf-vm/asdf.sh
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+#source <(ng completion script)
