@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "---- Set up Paru"
+echo "******** SKIPPING"
 
 #sudo pacman -S --needed base-devel
 #git clone https://aur.archlinux.org/paru.git
