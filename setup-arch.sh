@@ -8,8 +8,8 @@ echo "******** SKIPPING"
 #cd paru
 #makepkg -si
 
-echo "Kitty, Neovim, gh, stow, tmux, fzf, ripgrep, ripgrep, btop, Chrome, lazygit, unzip, joypixels  ---------------------------------------------------------------------------"
-paru -yS kitty neovim github-cli stow tmux fzf btop ripgrep google-chrome lazygit unzip ttf-joypixels
+echo "Kitty, Neovim, gh, stow, tmux, fzf, ripgrep, ripgrep, btop, Chrome, lazygit, sddm  ---------------------------------------------------------------------------"
+paru -y kitty neovim gh stow tmux fzf btop ripgrep google-chrome-stable lazygit, sddm
 sudo update-alternatives --config x-terminal-emulator
 
 echo "Nerd Fonts --------------------------------------------------------------"
@@ -64,6 +64,10 @@ unzip awscliv2.zip
 sudo ./aws/install
 rm -rf ./aws
 rm awscliv2.zip
+
+echo "sddm --------------------------------------------------------"
+
+
 
 echo "Working Folder --------------------------------------------------------"
 mkdir ~/Working
