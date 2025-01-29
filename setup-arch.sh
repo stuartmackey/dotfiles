@@ -1,15 +1,13 @@
 #!/bin/bash
 
 echo "---- Set up Paru"
-echo "******** SKIPPING"
-
-#sudo pacman -S --needed base-devel
-#git clone https://aur.archlinux.org/paru.git
-#cd paru
-#makepkg -si
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 
 echo "Kitty, Neovim, gh, stow, tmux, fzf, ripgrep, ripgrep, btop, Chrome, lazygit, sddm  ---------------------------------------------------------------------------"
-paru -y kitty neovim gh stow tmux fzf btop ripgrep google-chrome-stable lazygit, sddm
+paru -y kitty neovim gh stow tmux fzf btop ripgrep google-chrome-stable lazygit sddm polybar rofi
 sudo update-alternatives --config x-terminal-emulator
 
 echo "Nerd Fonts --------------------------------------------------------------"
@@ -73,3 +71,6 @@ echo "Working Folder --------------------------------------------------------"
 mkdir ~/Working
 mkdir ~/Working/GoReport
 mkdir ~/Working/personal
+
+git config --global user.email "stu.mackey@gmail.com"
+git config --global user.name "Stuart Mackey"
