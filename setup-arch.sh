@@ -7,16 +7,37 @@ cd paru
 makepkg -si
 
 echo "Base utils ---------------------------------------------------------------------------"
-paru -y kitty neovim gh stow tmux fzf btop ripgrep google-chrome lazygit sddm polybar rofi unzip flameshot unzip lazydocker
-sudo update-alternatives --config x-terminal-emulator
+declare -a utils=(
+	kitty
+	neovim
+	github-cli
+	stow
+	tmux
+	fzf
+	btop
+	ripgrep
+	google-chrome
+	lazygit
+	sddm
+	polybar
+	rofi
+	unzip
+	flameshot
+	unzip
+	lazydocker
+)
+
+for util in "${utils[@]}"; do
+	paru -S --noconfirm "${util}"
+done
 
 echo "Nerd Fonts --------------------------------------------------------------"
-cd ./dotfiles
+cd ~/dotfiles
 ./setup-fonts.sh
 
 echo "asdf ------------------------------------------------------------------"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
-cd ./dotfiles
+cd ~/dotfiles
 ./setup-asdf.sh
 
 echo "aws -------------------------------------------------------------------"
@@ -27,9 +48,9 @@ rm -rf ./aws
 rm awscliv2.zip
 
 echo "sddm --------------------------------------------------------"
-cd ./dotfiles/sddm
+cd ~/dotfiles/sddm
 sudo cp ./sddm.conf /etc/
-sudo unzip ./cattppuccin-mocha.zip -d /usr/share/sddm/themes
+sudo unzip -o ./catppuccin-mocha.zip -d /usr/share/sddm/themes/
 
 echo "Working Folder --------------------------------------------------------"
 mkdir ~/Working
