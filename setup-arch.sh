@@ -8,27 +8,28 @@ makepkg -si
 
 echo "Base utils ---------------------------------------------------------------------------"
 declare -a utils=(
-	kitty
-	neovim
-	github-cli
-	stow
-	tmux
-	fzf
-	btop
-	ripgrep
-	google-chrome
-	lazygit
-	sddm
-	polybar
-	rofi
-	unzip
-	flameshot
-	unzip
-	lazydocker
+  kitty
+  neovim
+  github-cli
+  stow
+  tmux
+  fzf
+  btop
+  ripgrep
+  google-chrome
+  lazygit
+  sddm
+  polybar
+  rofi
+  unzip
+  flameshot
+  unzip
+  lazydocker
+  fd
 )
 
 for util in "${utils[@]}"; do
-	paru -S --noconfirm "${util}"
+  paru -S --noconfirm "${util}"
 done
 
 echo "Nerd Fonts --------------------------------------------------------------"
@@ -60,3 +61,12 @@ mkdir ~/Working/personal
 echo "Set up git config -----------------------------------------------------"
 git config --global user.email "stu.mackey@gmail.com"
 git config --global user.name "Stuart Mackey"
+
+echo "Set up gh -------------------------------------------------------------"
+gh auth login
+
+cd ~/dotfiles
+git remote set-url origin git@github.com:stuartmackey/dotfiles
+
+echo "Set up nvim"
+gh repo clone stuartmackey/lazyvim-config ~/.config/nvim
