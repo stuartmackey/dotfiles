@@ -26,6 +26,7 @@ declare -a utils=(
   unzip
   lazydocker
   fd
+  asdf-vm
 )
 
 for util in "${utils[@]}"; do
