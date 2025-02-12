@@ -27,6 +27,9 @@ declare -a utils=(
   lazydocker
   fd
   asdf-vm
+  bash-completion
+  ranger
+  xclip
 )
 
 for util in "${utils[@]}"; do
@@ -38,7 +41,7 @@ cd ~/dotfiles
 ./setup-fonts.sh
 
 echo "asdf ------------------------------------------------------------------"
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+# git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
 cd ~/dotfiles
 ./setup-asdf.sh
 

@@ -1,3 +1,8 @@
+echo "configure asdf to work in shell"
+echo 'export ASDF_DATA_DIR="/home/stuart/.asdf"' >>~/.bashrc
+echo 'export PATH="$ASDF_DATA_DIR/shims:$PATH"' >>~/.bashrc
+echo ". <(asdf completion bash)" >>~/.bashrc
+
 echo "Erlang dependancies"
 #sudo apt-get -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk
 echo "Install Erlang"
