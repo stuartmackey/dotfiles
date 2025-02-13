@@ -30,6 +30,8 @@ declare -a utils=(
   bash-completion
   ranger
   xclip
+  docker
+  docker-compose
 )
 
 for util in "${utils[@]}"; do
