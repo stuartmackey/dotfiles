@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "---- Set up Paru"
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
+#sudo pacman -S --needed base-devel
+#git clone https://aur.archlinux.org/paru.git
+#cd paru
+#makepkg -si
 
 echo "Base utils ---------------------------------------------------------------------------"
 declare -a utils=(
@@ -69,10 +69,10 @@ git config --global user.email "stu.mackey@gmail.com"
 git config --global user.name "Stuart Mackey"
 
 echo "Set up gh -------------------------------------------------------------"
-gh auth login
+#gh auth login
 
 cd ~/dotfiles
-git remote set-url origin git@github.com:stuartmackey/dotfiles
+#git remote set-url origin git@github.com:stuartmackey/dotfiles
 
 echo "Set up nvim"
-gh repo clone stuartmackey/lazyvim-config ~/.config/nvim
+#gh repo clone stuartmackey/lazyvim-config ~/.config/nvim
