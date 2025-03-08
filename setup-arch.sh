@@ -8,30 +8,24 @@ echo "---- Set up Paru"
 
 echo "Base utils ---------------------------------------------------------------------------"
 declare -a utils=(
-  kitty
-  neovim
-  github-cli
   stow
   tmux
   fzf
   btop
   ripgrep
-  google-chrome
   lazygit
   sddm
   polybar
   rofi
   unzip
-  flameshot
   unzip
-  lazydocker
   fd
   asdf-vm
   bash-completion
-  ranger
   xclip
-  docker
-  docker-compose
+  qt6-svg
+  qt6-declarative
+  gt5-quickcontrols2
 )
 
 for util in "${utils[@]}"; do
