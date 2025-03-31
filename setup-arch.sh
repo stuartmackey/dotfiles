@@ -23,9 +23,6 @@ declare -a utils=(
   asdf-vm
   bash-completion
   xclip
-  docker
-  docker-compose
-  clamav
   qt6-svg
   qt6-declarative
   gt5-quickcontrols2

@@ -13,6 +13,7 @@ declare -a utils=(
   docker
   docker-compose
   nitrogen
+  clamav
 )
 
 for util in "${utils[@]}"; do
