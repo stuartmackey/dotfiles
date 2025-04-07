@@ -6,32 +6,6 @@ echo "---- Set up Paru"
 #cd paru
 #makepkg -si
 
-echo "Base utils ---------------------------------------------------------------------------"
-declare -a utils=(
-  stow
-  tmux
-  fzf
-  btop
-  ripgrep
-  lazygit
-  sddm
-  polybar
-  rofi
-  unzip
-  unzip
-  fd
-  asdf-vm
-  bash-completion
-  xclip
-  qt6-svg
-  qt6-declarative
-  gt5-quickcontrols2
-)
-
-for util in "${utils[@]}"; do
-  paru -S --noconfirm "${util}"
-done
-
 echo "Nerd Fonts --------------------------------------------------------------"
 cd ~/dotfiles
 ./setup-fonts.sh
@@ -67,6 +41,3 @@ echo "Set up gh -------------------------------------------------------------"
 
 cd ~/dotfiles
 #git remote set-url origin git@github.com:stuartmackey/dotfiles
-
-echo "Set up nvim"
-#gh repo clone stuartmackey/lazyvim-config ~/.config/nvim

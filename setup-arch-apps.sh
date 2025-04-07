@@ -14,6 +14,7 @@ declare -a utils=(
   docker-compose
   nitrogen
   clamav
+  1password
 )
 
 for util in "${utils[@]}"; do

@@ -31,7 +31,7 @@ bindsym XF86AudioPrev exec playerctl previous
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec kitty 
+bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -125,17 +125,14 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+b exec brave
 bindsym $mod+Shift+t exec teams
 
 bindsym $mod+Shift+p exec systemctl suspend
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
-# default workspaces
-assign [class="Microsoft Teams - Preview"] $ws1
 
-exec --no-startup-id diodon
-exec setxkbmap gb
+# exec --no-startup-id diodon
+# exec setxkbmap gb
 exec flameshot 
 
 default_border pixel 1
