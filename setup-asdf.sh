@@ -1,3 +1,17 @@
+echo "Base dependancies ---------------------------------------------------------------------------"
+declare -a utils=(
+  base-devel
+  rust
+  libffi
+  libyaml
+  openssl
+  zlib
+)
+
+for util in "${utils[@]}"; do
+  paru -S --noconfirm "${util}"
+done
+
 echo "configure asdf to work in shell"
 echo 'export ASDF_DATA_DIR="/home/stuart/.asdf"' >>~/.bashrc
 echo 'export PATH="$ASDF_DATA_DIR/shims:$PATH"' >>~/.bashrc

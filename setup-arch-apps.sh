@@ -15,6 +15,7 @@ declare -a utils=(
   nitrogen
   clamav
   1password
+  dbeaver-ce-bin
 )
 
 for util in "${utils[@]}"; do

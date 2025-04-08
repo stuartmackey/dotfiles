@@ -20,6 +20,8 @@ declare -a utils=(
   gt5-quickcontrols2
   libnotify
   sqlite3
+  zsh
+  aws-session-manager-plugin
 )
 
 for util in "${utils[@]}"; do
