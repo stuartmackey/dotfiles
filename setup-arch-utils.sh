@@ -22,6 +22,7 @@ declare -a utils=(
   sqlite3
   zsh
   aws-session-manager-plugin
+  postgresql-libs
 )
 
 for util in "${utils[@]}"; do
