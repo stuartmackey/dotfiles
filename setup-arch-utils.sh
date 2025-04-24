@@ -23,6 +23,7 @@ declare -a utils=(
   zsh
   aws-session-manager-plugin
   postgresql-libs
+  keychain
 )
 
 for util in "${utils[@]}"; do
