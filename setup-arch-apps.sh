@@ -16,7 +16,10 @@ declare -a utils=(
   clamav
   1password
   dbeaver-ce-bin
-  redisinsight
+  redisinsight-git
+  sqlitebrowser
+  ufw
+  pacman-contrib
 )
 
 for util in "${utils[@]}"; do
