@@ -60,26 +60,16 @@ module-margin-right = 1
 
 font-0 = JetBrainsMono Nerd Font:pixelsize=10;antialias=false;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Font Awesome 5 Pro Regular:style=Regular:pixelsize:12;2
-font-3 = Font Awesome 5 Brands Regular:style=Regular:pixelsize:12;2
-font-4 = Font Awesome 5 Pro Solid:style=Solid:pixelsize:12;2
-font-5 = Font Awesome 5 Pro Light:style=Light:pixelsize:12;2
-font-6 = Font Awesome 5 Duotone Solid:style=Solid:pixelsize:12;2
+font-2 = Font Awesome 6 Pro Regular:style=Regular:size=8;0
 
 ;modules-left =  mpd  
 modules-left = i3 pulseaudio cpu temperature
 modules-right = wlan backlight-acpi date ;powermenu
-modules-center = cmus spotify-next spotify
-
-;tray-position = right
-;tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
+modules-center = prs-github system-updates
+;cmus spotify-next spotify
 
 ;wm-restack = i3
-
 ;override-redirect = true
-
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -140,7 +130,6 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #f90000
 label = %percentage%%
 
 [module/wlan]
@@ -210,13 +199,15 @@ use-ui-max = true
 interval = 5
 
 format-volume = <ramp-volume> <label-volume>
-format-muted =   0%
+format-muted = 0%
 
 ramp-volume-0 = 
-ramp-volume-1 = 
+ramp-volume-1 = 
 ramp-volume-2 = 
 
 click-right = pavucontrol
+
+label-active-font = 2
 
 [module/temperature]
 type = internal/temperature
@@ -292,3 +283,19 @@ format = <label>
 format-underline = ${colors.line}
 label = %output%
 label-maxlen = 50
+
+[module/prs-github]
+type = custom/script
+exec = ~/.config/polybar/github-prs.sh
+interval = 60
+label-active-font = 1
+format-underline = #f90000
+click-left = google-chrome-stable https://github.com/pulls/review-requested
+
+[module/system-updates]
+type = custom/script
+exec = ~/.config/polybar/system-updates.sh
+interval = 60
+label-active-font = 1
+format-underline = #f9f900
+click-left = kitty su stuart-admin

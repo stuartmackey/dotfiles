@@ -1,2 +1,6 @@
 SSH_AUTH_SOCK=/tmp/ssh-XXXXXXZ72GnD/agent.3381; export SSH_AUTH_SOCK;
 SSH_AGENT_PID=3382; export SSH_AGENT_PID;
+if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+    eval `$SSHAGENT $SSHAGENTARGS`
+    trap "kill $SSH_AGENT_PID" 0
+fi
