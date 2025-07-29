@@ -62,11 +62,9 @@ font-0 = JetBrainsMono Nerd Font:pixelsize=10;antialias=false;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = Font Awesome 6 Pro Regular:style=Regular:size=8;0
 
-;modules-left =  mpd  
 modules-left = i3 pulseaudio cpu temperature
-modules-right = wlan backlight-acpi date ;powermenu
 modules-center = prs-github system-updates
-;cmus spotify-next spotify
+modules-right = docker-service date
 
 ;wm-restack = i3
 ;override-redirect = true
@@ -178,8 +176,6 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-padding = 3
-;format-underline = #0a6cf5
 
 label = %date% %time%
 
@@ -295,7 +291,16 @@ click-left = google-chrome-stable https://github.com/pulls/review-requested
 [module/system-updates]
 type = custom/script
 exec = ~/.config/polybar/system-updates.sh
-interval = 60
+interval = 86400
 label-active-font = 1
 format-underline = #f9f900
 click-left = kitty su stuart-admin
+
+[module/docker-service]
+type = custom/script
+exec = ~/.config/polybar/docker-service.sh
+interval = 60
+label-active-font = 1
+;format-underline = #f90000
+label-maxlen = 30
+click-left = kitty
