@@ -139,4 +139,5 @@ default_floating_border pixel 1
 gaps inner 5
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id xrandr --output HDMI-0 --mode 2560x1080 --rate 60
 
